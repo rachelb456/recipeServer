@@ -10,7 +10,7 @@ myapp.use('/recipes', myRecipesController)
 let myBodyP = require('body-parser')
 myapp.use(myBodyP())
 let mongoose = require('mongoose')
-// myapp.use(myexpress.static('public'));
+
 myapp.use('/images', myexpress.static('public'));
 
 mongoose.connect('mongodb://127.0.0.1:27017/recipe');
